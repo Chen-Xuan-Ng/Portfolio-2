@@ -91,7 +91,7 @@
                         <p>Learnt EV3 for the first time</p>
                     </div>
                 </li>
-                <li title="Click to view more" class="clickable">
+                <li id="fll2020-2021T" title="Click to view more" class="clickable">
                     <a href="#fll2020-2021">
                         <div class="timeline-content">
                             <h2 class="date">2020-2021</h2>
@@ -137,13 +137,15 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="fll2021-2022T" title= Click to view more" class="clickable">
+                <a href="#fll2021-2022">
                     <div class="timeline-content">
-                        <h2 class="date">2021-2022</h2>
-                        <h1>Fll 2021/2022</h1>
-                        <img src="../Media/Certificates in Image/13. FLL 2022.jpg" alt="certificate" width="100%"> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque animi eligendi eos delectus quibusdam suscipit autem id doloremque placeat!</p>
-                    </div>
+                            <h2 class="date">2021-2022</h2>
+                            <h1>Fll 2021/2022</h1>
+                            <img src="../Media/Certificates in Image/13. FLL 2022.jpg" alt="certificate" width="100%"> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque animi eligendi eos delectus quibusdam suscipit autem id doloremque placeat!</p>
+                        </div>
+                    </a>
                 </li>
                 <li>
                     <div class="timeline-content">
@@ -257,6 +259,7 @@
     <div class="more">
         <ul>
             <li id="fll2020-2021">
+            <a href="#fll2020-2021T">
                 <h1>First&nbsp;Lego&nbsp;League 2020-2021</h1>
                 <hr> 
                 <iframe class="video" width="941px" height="539px" src="https://www.youtube.com/embed/jrQ0WPRibPI" title="FLL 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -265,43 +268,52 @@
                     <p>This was my First First Lego League. <br> To increase efficiency, our coach suggested we split into two groups and focus on different mission in different sections with two robots, which we did. </p>
                     <img class = "img" src="../Media/FLL 2020-2021/FLL-4.jpg" alt="image of me modifying the robot">
                 </div>
+            </a>
             </li>
             <li id="IDE2021-Robotics">
-                <h1>IDE Series Robotics 2021</h1>
-                <hr> 
-                <div id="player" class="video"></div>
-                <script>
-                    var player;
-            
-                    function onYouTubeIframeAPIReady() {
-                        player = new YT.Player('player', {
-                            height: '541',
-                            width: '944',
-                            videoId: 'EMvPrzTB-0w',
-                            events: {
-                                'onReady': onPlayerReady
-                            }
-                        });
-                    }
-            
-                    function onPlayerReady(event) {
-                        // Optional: Auto-play the video
-                        event.target.playVideo();
-                    }
-            
-                    function jumpToTime(time) {
-                        player.seekTo(time);
-                    }
-                </script>
-                <script src="https://www.youtube.com/player_api"></script>                <p>My favourite part of the robot is when it uses its colour sensor to detect if the cube is red or green to accordingly push it into its colour-box (<a class="href" onclick="jumpToTime(65)">1:05</a>). Apart from that, I am also proud of how smooth the motions were. <br> However, one thing that keeps nugging me when I watch the video is how risky the turns were. I could have used the colour sensors to turn (e.g. Right turns: Turn until right sensor detects black). Also, I could have sped up the robot which would may have led to a 1st place instead of 2nd. <br> The biggest challenge I faced programming this occured on the day itself. I recall the laptop crashed with the code and we had to re-program the entire code. Fortunately, we did it in time. </p>
+                <a href="IDE2021-RoboticsT">
+                    <h1>IDE Series Robotics 2021</h1>
+                    <hr> 
+                    <div id="player" class="video"></div>
+                    <script>
+                        var player;
+                
+                        function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('player', {
+                                height: '541',
+                                width: '944',
+                                videoId: 'EMvPrzTB-0w',
+                                events: {
+                                    'onReady': onPlayerReady
+                                }
+                            });
+                        }
+                
+                        function onPlayerReady(event) {
+                            // Optional: Auto-play the video
+                            event.target.playVideo();
+                        }
+                
+                        function jumpToTime(time) {
+                            player.seekTo(time);
+                        }
+                    </script>
+                    <script src="https://www.youtube.com/player_api"></script>                <p>My favourite part of the robot is when it uses its colour sensor to detect if the cube is red or green to accordingly push it into its colour-box (<a class="href" onclick="jumpToTime(65)">1:05</a>). Apart from that, I am also proud of how smooth the motions were. <br> However, one thing that keeps nugging me when I watch the video is how risky the turns were. I could have used the colour sensors to turn (e.g. Right turns: Turn until right sensor detects black). Also, I could have sped up the robot which would may have led to a 1st place instead of 2nd. <br> The biggest challenge I faced programming this occured on the day itself. I recall the laptop crashed with the code and we had to re-program the entire code. Fortunately, we did it in time. </p>
+            </a>
             </li>
             </li>
             <li id="ICS2021">
+            
                 <h1>International Coding Showcase 2021</h1>
                 <hr> 
                 <iframe class="video" width="941" height="539" src="https://www.youtube.com/embed/sMiK84toIy4" title="Ng Chen-Xuan, 10, Singapore | Python Project Showcase | ICS 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h2>Try it yourself!</h2> 
                 <iframe src="https://replit.com/@Chen-XuanNg/Maze-Generator"></iframe>
+            </li>
+            <li id="fll2021-2022">
+                <h1>First&nbsp;Lego&nbsp;League 2021-2022</h1>
+                <hr>
+                <iframe class="video" width="893" height="502" src="https://www.youtube.com/embed/9N4efFUuqaI" title="FLL 2021/2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </li>
             <li id="IDE2023-Code-Hacker">
                 <h1>IDE Code Hacker Secondary (Python)</h1>
