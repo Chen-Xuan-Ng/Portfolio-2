@@ -6,17 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics &amp; Programming</title>
     <link rel="stylesheet" href="robotics&programming.css"> 
-    <script>
-        function jumpToTime(event, time) {
-            const video = event.target.parentNode.previousElementSibling;
-            video.currentTime = time;
-        }
-    </script>
 </head>
 <body> 
     <nav>
         <ul> 
-          <li><a class="Home" href="index.html">Home</a>
+          <li><a class="Home" href="../index.html">Home</a>
             <ul>
                 <li><a href="../index.html#about">About Me</a></li>
                 <li><a href="../Robotics&Programming/robotics&programming.html">Robotics &amp; Programming</a></li>
@@ -115,13 +109,13 @@
                         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque animi eligendi eos delectus quibusdam suscipit autem id doloremque placeat!</p> -->
                     </div>
                 </li>
-                <li title="Click to view more" class="clickable"> 
+                <li id="IDE2021-RoboticsT" title="Click to view more" class="clickable"> 
                     <a href="#IDE2021-Robotics">
                         <div class="timeline-content">
                             <h2 class="date">October 2021</h2>
                             <h1>IDE Robotics <br> 2nd Place</h1>
                             <img src="../Media/Certificates in Image/10. IDE 2021 - 2nd.jpg" alt="certificate" width="100%"> 
-                            <p>My first IDE, still proud of my robot. </p>
+                            <p>My first IDE, I'm still proud of my robot. </p>
                         </div>
                     </a>
                 </li>
@@ -130,16 +124,16 @@
                         <h2 class="date">October 2021</h2>
                         <h1>Lego Robotics Grade&nbsp;3 <br> High Distinction</h1>
                         <img src="../Media/Certificates in Image/11. Robotics Grade 3 High Distinction.jpg" alt="certificate" width="100%"> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque animi eligendi eos delectus quibusdam suscipit autem id doloremque placeat!</p>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque animi eligendi eos delectus quibusdam suscipit autem id doloremque placeat!</p> -->
                     </div>
                 </li>
-                <li title="Click to view more" class="clickable">
+                <li id="ICS2021T" title="Click to view more" class="clickable">
                     <a href="#ICS2021">
                         <div class="timeline-content">
                             <h2 class="date">December 2021</h2>
                             <h1>International Coding Showcase <br> Distinction & Most creative</h1>
                             <img src="../Media/Certificates in Image/12. ICS 2021 Distinction.jpg" alt="certificate" width="100%"> 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque animi eligendi eos delectus quibusdam suscipit autem id doloremque placeat!</p>
+                            <p>Created a maze generator using python "Turle" module. I also used some "Pygame" module functions to save the image as .png. </p>
                         </div>
                     </a>
                 </li>
@@ -231,7 +225,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque animi eligendi eos delectus quibusdam suscipit autem id doloremque placeat!</p>
                     </div>
                 </li>
-                <li title="Click for more Images" class="clickable">
+                <li id = "IDE2023-Code-HackerT" title="Click for more Images" class="clickable">
                     <a href="#IDE2023-Code-Hacker">
                         <div class="timeline-content">
                             <h2 class="date">May 2023</h2>
@@ -265,8 +259,8 @@
             <li id="fll2020-2021">
                 <h1>First&nbsp;Lego&nbsp;League 2020-2021</h1>
                 <hr> 
-                <iframe class="video" src="https://www.youtube.com/watch?v=NpEaa2P7qZI" autoplay="false"></iframe>
-                <div class="media"> 
+                <iframe class="video" width="941px" height="539px" src="https://www.youtube.com/embed/jrQ0WPRibPI" title="FLL 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="media">
                     <img class = "img" src="../Media/FLL 2020-2021/FLL-1.jpg" alt="group photo"> 
                     <p>This was my First First Lego League. <br> To increase efficiency, our coach suggested we split into two groups and focus on different mission in different sections with two robots, which we did. </p>
                     <img class = "img" src="../Media/FLL 2020-2021/FLL-4.jpg" alt="image of me modifying the robot">
@@ -275,13 +269,39 @@
             <li id="IDE2021-Robotics">
                 <h1>IDE Series Robotics 2021</h1>
                 <hr> 
-                <video class="ide2021-video" width="100%" controls>
-                    <source src="https://www.youtube.com/watch?v=NpEaa2P7qZI" type="video/mp4">
-                </video>
-                <p>My favourite part of the robot is when it uses its colour sensor to detect if the cube is red or green to accordingly push it into its colour-box (<a class="href" onclick="jumpToTime(event, 65)">1:05</a>). Apart from that, I am also proud of how smooth the motions were. <br> However, one thing that keeps nugging me when I watch the video is how risky the turns were. I could have used the colour sensors to turn (e.g. Right turns: Turn until right sensor detects black). Also, I could have sped up the robot which would may have led to a 1st place instead of 2nd. <br> The biggest challenge I faced programming this occured on the day itself. I recall the laptop crashed with the code and we had to re-program the entire code. Fortunately, we did it in time. </p>
+                <div id="player" class="video"></div>
+                <script>
+                    var player;
+            
+                    function onYouTubeIframeAPIReady() {
+                        player = new YT.Player('player', {
+                            height: '541',
+                            width: '944',
+                            videoId: 'EMvPrzTB-0w',
+                            events: {
+                                'onReady': onPlayerReady
+                            }
+                        });
+                    }
+            
+                    function onPlayerReady(event) {
+                        // Optional: Auto-play the video
+                        event.target.playVideo();
+                    }
+            
+                    function jumpToTime(time) {
+                        player.seekTo(time);
+                    }
+                </script>
+                <script src="https://www.youtube.com/player_api"></script>                <p>My favourite part of the robot is when it uses its colour sensor to detect if the cube is red or green to accordingly push it into its colour-box (<a class="href" onclick="jumpToTime(65)">1:05</a>). Apart from that, I am also proud of how smooth the motions were. <br> However, one thing that keeps nugging me when I watch the video is how risky the turns were. I could have used the colour sensors to turn (e.g. Right turns: Turn until right sensor detects black). Also, I could have sped up the robot which would may have led to a 1st place instead of 2nd. <br> The biggest challenge I faced programming this occured on the day itself. I recall the laptop crashed with the code and we had to re-program the entire code. Fortunately, we did it in time. </p>
+            </li>
             </li>
             <li id="ICS2021">
-                
+                <h1>International Coding Showcase 2021</h1>
+                <hr> 
+                <iframe class="video" width="941" height="539" src="https://www.youtube.com/embed/sMiK84toIy4" title="Ng Chen-Xuan, 10, Singapore | Python Project Showcase | ICS 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h2>Try it yourself!</h2> 
+                <iframe src="https://replit.com/@Chen-XuanNg/Maze-Generator"></iframe>
             </li>
             <li id="IDE2023-Code-Hacker">
                 <h1>IDE Code Hacker Secondary (Python)</h1>
