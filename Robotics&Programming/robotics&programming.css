@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap');
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+html { 
+    font-family: 'Montserrat', sans-serif; 
+    color: white
+}
+
+body { 
+    opacity: 0; 
+    animation: fadeAnimation 1s ease-in-out forwards; 
+}
+
+@keyframes fadeAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+iframe { 
+    width: 100%; 
+    overflow:hidden;
+    height: 317px; 
+    /* height: 100vh;  */
+    border: none; 
+        view-toolbar{ 
+            display: none; 
+        }
+}
+
+.container { 
+    min-height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    background-color: #009578; 
+}
+
+.timeline { 
+    width: 100%; 
+    height: auto; 
+    max-width: 90%; 
+    margin: 65px 7% 20% 7%; 
+    position: relative; 
+}
+
+.timeline ul { 
+    list-style: none; 
+}
+
+.timeline ul li { 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    color: white; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+}
+
+.timeline ul li:last-child { 
+    margin-bottom: 0; 
+}
+
+.timeline-content h1 { 
+    font-size: 25px; 
+    font-weight: 500; 
+    line-height: 30px; 
+    margin-bottom: 10px; 
+}
+
+.timeline-content p { 
+    font-size: 16px; 
+    line-height: 30px; 
+    font-weight: 300; 
+}
+
+.timeline-content .date { 
+    font-size: 13px; 
+    font-weight: 300; 
+    margin-bottom: 10px; 
+    letter-spacing: 2px; 
+}
+
+.timeline ul a{ 
+    text-decoration: none; 
+    color: inherit; 
+}
+/* 768 */
+@media only screen and (min-width: 768px) { 
+    .timeline::before { 
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        background-color: white; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .timeline ul li { 
+        width: 50%; 
+        margin-bottom: 50px; 
+        position: relative; 
+    }
+    .timeline ul li:nth-child(odd) { 
+        float: left; 
+        clear: right; 
+        transform: translateX(-30px); 
+        border-radius: 10px 0px 10px 10px; 
+    }
+    .timeline ul li:nth-child(even) { 
+        float: right; 
+        clear: left; 
+        transform: translateX(30px); 
+        border-radius: 0px 10px 10px 10px; 
+    }
+    .timeline ul li::after { 
+        content: ''; 
+        position: absolute; 
+        height: 15px; 
+        width: 15px; 
+        background-color: white; 
+        border-radius: 50%; 
+        top: 0; 
+    }
+    .timeline ul::after { 
+        content: ''; 
+        position: absolute; 
+        height: 15px; 
+        width: 15px; 
+        border-radius: 50%;
+        background-color: white; 
+        top: initial; 
+        bottom: 0; 
+        transform: translate(-50%, 50%)
+    }
+    .timeline ul li:nth-child(odd)::after { 
+        transform: translate(50%, -50%); 
+        right: -30px; 
+    }
+    .timeline ul li:nth-child(even)::after { 
+        transform: translate(-50%, -50%); 
+        left: -30px; 
+    }
+    .clickable:hover::after{ 
+        cursor: pointer; 
+        background-color: rgb(165, 170, 147); 
+        transition: 0.5s; 
+    }
+    .clickable:hover { 
+        cursor: pointer; 
+        background-color: rgba(255, 255, 255, 0.3); 
+        transition: 0.5s; 
+    }
+    .timeline-content .date { 
+        position: absolute; 
+        top: -30px; 
+    }
+}
+
+
+body { 
+    background-color: #009578; 
+    background-size: cover;
+}
+
+nav { 
+    z-index: 3;
+    width: 250px; 
+    height: 65px; 
+    background-color: darkslategray; 
+    float: right; 
+    position: relative; 
+    top: 30px; right: 35px; 
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 0px 10px 0px;
+}
+
+nav:hover { 
+    border-radius: 15px 15px 0px 0px;
+}
+
+nav:hover ul li ul { 
+    display: block; 
+    transition: all 1s; 
+}
+
+/* nav p{ 
+    font-family: Arial; 
+    color: black; 
+    font-size: 24px; 
+    line-height: 55px; 
+    float: left; 
+    padding: 0px 20px;
+} */
+
+.Home { 
+    width: 230px; 
+    position: relative; 
+    top: 0px; 
+    left: 10px; 
+} 
+
+nav ul { 
+    float: left; 
+} 
+
+nav ul li { 
+    float: left; 
+    list-style: none; 
+    position: relative; 
+}
+
+nav ul li a{ 
+    display: block; 
+    color: whitesmoke; 
+    font-size: 17px; 
+    padding: 14px 12px; 
+    text-decoration: none; 
+    /* float: left;  */
+}
+
+nav ul li a:hover { 
+    background-color: rgba(255,255,255,0.2); 
+    border-radius: 4px; 
+    transition: all 1s
+}
+
+nav ul li ul{ 
+    display: none; 
+    position: absolute; 
+    background-color: darkslategray; 
+    padding: 0px 10px 10px 10px; 
+    border-radius: 0px 0px 15px 15px; 
+    /* border-radius: 20px ; */
+}
+
+nav ul li ul li { 
+    width: 230px; 
+}
+
+nav ul li ul li a:hover{ 
+    background-color: rgba(255,255,255,0.2); 
+    border-radius: 4px; 
+    transition: all 1s
+}
+
+nav ul li ul li a { 
+    color: whitesmoke; 
+}
+
+.more ul { 
+    list-style: none; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.more ul li{ 
+    margin: 0 20px 0 20px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
+}
+
+.media { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+}
+
+.more ul li h1{ 
+    padding-top: 20px; 
+    margin-top: 10px; 
+    text-align: center;
+}
+
+.more ul li hr { 
+    position: relative; 
+    left: 5%; 
+    width: 90%; 
+    height: 7px; 
+    border: none; 
+    background-color: white; 
+    border-radius: 4px;
+    margin-top: 10px; 
+}
+
+.more ul li *:not(.more ul li hr):not(.more ul li h1):not(.more ul li h3):not(.href) { 
+    padding: 20px; 
+}
+
+.more ul li h3 { 
+    padding: 20px 0 0 20px;  
+}
+
+.video{ 
+    height: 600px; 
+} 
+
+.img { 
+    width: 100%; 
+    height: auto; 
+}
+
+.href { 
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+.href:active { 
+    color: red; 
+}
+
+#fll2020-2021 p { 
+    font-size: 30px; 
+    grid-row: span 2; 
+}
+
+#IDE2021-Robotics { 
+    font-size: 20px; 
+}

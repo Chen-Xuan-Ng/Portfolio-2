@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap');
+
+* { 
+    scroll-behavior: smooth;
+    margin: 0; 
+    padding: 0; 
+}
+
+html { 
+    font-family: 'Montserrat', sans-serif; 
+} 
+
+body { 
+    opacity: 0; 
+    animation: fadeAnimation 1s ease-in-out forwards; 
+    background: linear-gradient(to bottom, #2b2b2b, #009578);
+    background-size: cover;
+} 
+
+@keyframes fadeAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+nav { 
+    width: 250px; 
+    height: 49px; 
+    background-color: darkslategray;  
+    float: right; 
+    position: absolute; 
+    top: 30px; right: 35px; 
+    border-radius: 15px 15px 15px 15px; 
+    padding: 10px 0px 10px 0px; 
+}
+
+nav:hover { 
+    border-radius: 15px 15px 0px 0px;
+}
+
+nav:hover ul li ul { 
+    display: block; 
+    transition: all 1s; 
+}
+
+/* nav p{ 
+    font-family: Arial; 
+    color: black; 
+    font-size: 24px; 
+    line-height: 55px; 
+    float: left; 
+    padding: 0px 20px;
+} */
+
+.Home { 
+    width: 206px; 
+    position: relative; 
+    top: 0px; 
+    left: 10px; 
+} 
+
+nav ul { 
+    float: left; 
+} 
+
+nav ul li { 
+    float: left; 
+    list-style: none; 
+    position: relative; 
+}
+
+nav ul li a{ 
+    display: block; 
+    color: whitesmoke; 
+    font-size: 17px; 
+    padding: 14px 12px; 
+    text-decoration: none; 
+    /* float: left;  */
+}
+
+nav ul li a:hover { 
+    background-color: rgba(255,255,255,0.2); 
+    border-radius: 4px; 
+    transition: all 1s; 
+}
+
+nav ul li ul{ 
+    position: relative; 
+    display: none; 
+    position: absolute; 
+    background-color: darkslategray; 
+    padding: 0px 10px 10px 10px; 
+    border-radius: 0px 0px 15px 15px; 
+    /* border-radius: 20px ; */
+}
+
+
+nav ul li ul li { 
+    width: 230px; 
+}
+
+nav ul li ul li a:hover{ 
+    background-color: rgba(255,255,255,0.2); 
+    border-radius: 4px;
+    /* color: purple;  */
+    transition: all 1s
+}
+
+nav ul li ul li a { 
+    color: whitesmoke;  
+}
+
+
+/* h1 { 
+    position: static; 
+    top: 30px; 
+    left: 30px; 
+    font-size: 70px; 
+    padding: 30px 0px 0px 30px; 
+} */
+
+/* h2 { 
+    position: static; 
+    top: 30px; 
+    left: 30px; 
+    font-size: 60px; 
+    padding: 30px 0px 0px 30px; 
+} */
+
+h1 {
+    color: whitesmoke; 
+    position: static; 
+    font-size: 70px;
+    padding: 30px 0px 0px 30px; 
+    margin-top: 80px; 
+    margin-bottom: 2%; 
+  }
+  
+h2 { 
+    color: white; 
+    text-align-last: center; 
+    font-size: 500%; 
+    padding: 30px 0px 0px 30px; 
+    margin-bottom: 30px; 
+}
+  
+/* Media query for screens wider than 1000px */
+@media (min-width: 1100px) {
+    h1 { 
+        margin-top: 0; /* Remove margin for larger screens */
+    }
+} 
+
+.aboutimg_about { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.indi_photo_container { 
+    margin-left: 5%; 
+}
+
+.indi_photo { 
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    float: left; 
+    border-radius: 60px; 
+    margin-right: 0; 
+} 
+
+.about { 
+    text-align: center; 
+    line-height: 40px ;
+    color: white; 
+    font-size: 180%; 
+    margin-left: 5%; 
+    margin-right: 5%; 
+    float: left; 
+    min-width: 42.5%;
+} 
+
+.abouthr { 
+    position: relative; 
+    left: 5%; 
+    width: 90%; 
+    height: 10px; 
+    border: none; 
+    background-color: white; 
+    border-radius: 4px;
+    margin-top: 40px; 
+} 
+
+.footer { 
+    color: white; 
+}
+
+.about-sum { 
+    line-height: 50px; 
+}
+
+.testimonials { 
+    margin: 5%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.testimonial { 
+    width: 90%; 
+    margin: 1%
+}
