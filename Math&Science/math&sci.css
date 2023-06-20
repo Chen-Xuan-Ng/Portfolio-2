@@ -256,3 +256,57 @@ nav ul li ul li a:hover{
 nav ul li ul li a { 
     color: whitesmoke; 
 }
+
+.more ul { 
+    list-style: none; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.more ul li{ 
+    margin: 0 20px 0 20px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
+}
+
+.more ul li h1{ 
+    padding-top: 20px; 
+    margin-top: 10px; 
+    text-align: center;
+}
+
+.more ul li hr { 
+    position: relative; 
+    left: 5%; 
+    width: 90%; 
+    height: 7px; 
+    border: none; 
+    background-color: white; 
+    border-radius: 4px;
+    margin-top: 10px; 
+}
+
+.more ul li *:not(.more ul li hr):not(.more ul li h1):not(.more ul li h3):not(.href) { 
+    padding: 20px; 
+}
+
+.more ul li h3 { 
+    padding: 20px 0 0 20px;  
+}
+
+.more ul li h1 { 
+    color: white; 
+    text-decoration: none;
+}
+
+.more ul li p { 
+    color: white; 
+    text-decoration: none;
+}
+
+.video{ 
+    width: 100%; 
+    height: 600px; 
+} 
