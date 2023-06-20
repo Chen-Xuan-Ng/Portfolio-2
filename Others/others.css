@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap');
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+html { 
+    font-family: 'Montserrat', sans-serif; 
+    color: white
+}
+
+body { 
+    opacity: 0; 
+    animation: fadeAnimation 1s ease-in-out forwards; 
+}
+
+@keyframes fadeAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
