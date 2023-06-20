@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Other Projects</title>
+    <link rel="stylesheet" href="others.css"> 
 </head>
 <body>
     <nav>
@@ -21,5 +22,44 @@
           </li>
         </ul>
       </nav>
+      <h1>Arduino &amp; Other Projects</h1>
+      <img src="../Arduino/Mug shot.JPG" src="Mug shot of my plant automated plant care system">
+      <h3>My Process: </h3>
+      <hr>
+      <div class="step1">
+        <h4.
+        >Step 1: </h4> 
+        <p>Identify the problem</p>
+        <img src="../Arduino/Problem.jpg" alt="withering cacti">
+        <small>Even cacti can't live in our busy environment: I don't have time to water them</small>
+      </div>
+      <div class="step2">
+        <h4>Step 2: </h4>
+        <p>Come up with a solution</p>
+        <img src="../" alt="ummm No Image Available">
+      </div>
+      <div class="step3">
+        <h4>Step 3: </h4>
+        <p>Implement it</p>
+        <div class="image-step3">
+            <img src="../Arduino/P1.jpg" alt="me snapping off supports in front of a 3d printer">
+            <img src="../Arduino/P2.jpg" alt="us checking moisture sensor">
+            <img src="../Arduino/P3.jpg" alt="doing stuff">
+            <img src="../Arduino/P4.jpg" alt="doing stuff">
+        </div>
+        <small>We used a nema stepper mottor to allow the light to go up and down, which is controlled by a potential-meter</small>
+        <div class="videos">
+          <iframe class="video" width="447" height="795" src="https://www.youtube.com/embed/VTcdSILPE5o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="video" width="684" height="707" src="https://www.youtube.com/embed/heIqjvouoIo" title="Automated Plant Care System Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <small class="about">One major problem faced was what we suspected as a power issue. The arduino bot would just crash when moving the motor or pumping. As the arudino has a built-in short-circuit measure, it would automatically restart when there is a power over load. Hence, the arudino would keep re-initialise and the entire code would go haywire. To solve his issue, we tried switching off the energy consuming parts before running another part. Although this worked, it was still unreliable. In the end, I figured out a solution, which was not perfect but still worked. I came across this idea when whenever I plugged in the USB cable to my computer and has the main power socket turned on, the arduino would have enough electricty to run and not have crashing issues. Thus as you can see in the videos above^, I simply connected another power socket to the arduino. </small>
+      </div>
+      <div class="testing">
+        <h4>Testing: </h4>
+        <p>Now that I was all done, it was time to TEST. </p>
+      </div>
+      <div class="still1problem">
+        <h4>However, there is still 1 problem which has caused the project to be unsucessful. </h4>
+      </div>
 </body>
 </html>
