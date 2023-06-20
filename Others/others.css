@@ -86,6 +86,17 @@ div small {
     align-items: center; 
 }
 
+.rustingP { 
+    font-size: 2vw; 
+}
+
+.rusted { 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 0; 
+    align-items: center; 
+}
+
 .videos { 
     display: grid; 
     grid-template-columns: 1fr 1fr;
