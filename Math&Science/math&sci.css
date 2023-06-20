@@ -26,6 +26,16 @@ body {
     }
   }
 
+.title { 
+    padding: 40px; 
+    margin-top: 80px; 
+}
+
+@media (min-width: 1000px) {
+    .title { 
+        margin-top: 0; /* Remove margin for larger screens */
+    }
+} 
 
 .container { 
     min-height: 100vh; 
@@ -168,7 +178,7 @@ nav {
     height: 65px; 
     background-color: darkslategray; 
     float: right; 
-    position: relative; 
+    position: absolute; 
     top: 30px; right: 35px; 
     border-radius: 15px 15px 15px 15px;
     padding: 10px 0px 10px 0px;
