@@ -97,6 +97,12 @@ div small {
     max-width: 100%
 }
 
+.seedsindetail { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-gap: 0; 
+}
+
 hr { 
     position: relative; 
     left: 5%; 
