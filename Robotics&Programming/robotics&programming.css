@@ -26,6 +26,11 @@ body {
     }
   }
 
+.ics2021M { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; 
+}
 
 small { 
     font-size: 15px; 
