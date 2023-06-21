@@ -36,6 +36,10 @@ img {
     width: 90%; 
 }
 
+.parts { 
+    display: grid; 
+}
+
 h1 {
     padding: 40px; 
     margin-top: 80px; 
@@ -61,6 +65,10 @@ h4 {
     font-size: 7vw; 
 }
 
+h5 { 
+    font-size: 4vw; 
+}
+
 div { 
     margin: 20px; 
 }
@@ -75,13 +83,10 @@ div p {
 }
 
 div small { 
+    display: block; 
+    width: 100%; 
     font-size: 1.7vw; 
     text-align: center; 
-}
-
-.about { 
-    width: 100%; 
-    transform: translateX(50%); 
 }
 
 .image-step3 { 
