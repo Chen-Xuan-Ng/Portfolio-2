@@ -267,7 +267,7 @@ nav ul li ul li a {
 }
 
 .more ul li{ 
-    margin: 0 20px 0 20px; 
+    margin: 10px 20px 10px 20px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
 }
 
@@ -296,14 +296,9 @@ nav ul li ul li a {
     padding: 20px 0 0 20px;  
 }
 
-.more ul li h1 { 
+.more ul li a { 
     color: white; 
-    text-decoration: none;
-}
-
-.more ul li p { 
-    color: white; 
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .video{ 
