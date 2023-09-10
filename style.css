@@ -15,6 +15,7 @@ body {
     animation: fadeAnimation 1s ease-in-out forwards; 
     background: linear-gradient(to bottom, #2b2b2b, #009578);
     background-size: cover;
+    padding: 0 40px 0 40px; 
 } 
 
 @keyframes fadeAnimation {
